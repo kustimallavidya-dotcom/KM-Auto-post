@@ -14,6 +14,8 @@
             font-family: 'Poppins', sans-serif;
             background-color: #1a0f0a; /* Earthy Dark */
             color: #f3e9dc;
+            margin: 0;
+            padding: 0;
         }
         h1, h2, h3, .teko {
             font-family: 'Teko', sans-serif;
@@ -22,20 +24,12 @@
         .mitti-gradient {
             background: linear-gradient(135deg, #4a2c2a 0%, #2a1816 100%);
         }
-        .mitti-border {
-            border-color: #8c5a44;
-        }
-        .mitti-accent {
-            color: #d97706; /* Amber-600 */
-        }
-        .btn-mitti {
-            background: #d97706;
-            color: white;
-            transition: all 0.2s;
-        }
-        .btn-mitti:hover {
-            background: #b45309;
-            transform: translateY(-1px);
+        .loading-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
     </style>
 <script type="importmap">
@@ -50,6 +44,12 @@
 </script>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <div class="loading-container">
+            <p class="teko text-amber-500 text-2xl animate-pulse">Kushti Assistant Loading...</p>
+        </div>
+    </div>
+    <!-- महत्त्वाची दुरुस्ती: index.tsx लोड करण्यासाठी खालील ओळ जोडली आहे -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
