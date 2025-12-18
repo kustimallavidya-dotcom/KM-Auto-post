@@ -1,0 +1,7 @@
+{
+  "name": "Kushti Post Assistant",
+  "description": "A guided social media posting assistant for Indian Wrestling (Kushti) content creators. Helps prepare and format content for YouTube, Facebook, Instagram, and WhatsApp.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
